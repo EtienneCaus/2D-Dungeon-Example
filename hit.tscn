@@ -1,0 +1,94 @@
+[gd_scene load_steps=13 format=3 uid="uid://diobi2emk4gb1"]
+
+[ext_resource type="Script" path="res://hit.cs" id="1_5tirr"]
+[ext_resource type="Texture2D" uid="uid://no2gicry41cd" path="res://EffetsSpeciaux.png" id="1_tng2n"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_5o51x"]
+radius = 2.0
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cs3e5"]
+atlas = ExtResource("1_tng2n")
+region = Rect2(0, 0, 8, 8)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_re1gk"]
+atlas = ExtResource("1_tng2n")
+region = Rect2(8, 0, 8, 8)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7fwaf"]
+atlas = ExtResource("1_tng2n")
+region = Rect2(16, 0, 8, 8)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pqutv"]
+atlas = ExtResource("1_tng2n")
+region = Rect2(24, 0, 8, 8)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8xc06"]
+atlas = ExtResource("1_tng2n")
+region = Rect2(32, 0, 8, 8)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_q2r8c"]
+atlas = ExtResource("1_tng2n")
+region = Rect2(40, 0, 8, 8)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_inknm"]
+atlas = ExtResource("1_tng2n")
+region = Rect2(48, 0, 8, 8)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gss1b"]
+atlas = ExtResource("1_tng2n")
+region = Rect2(56, 0, 8, 8)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_qliiq"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cs3e5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_re1gk")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7fwaf")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pqutv")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8xc06")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_q2r8c")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_inknm")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gss1b")
+}],
+"loop": true,
+"name": &"CoupEpee",
+"speed": 50.0
+}]
+
+[node name="Hit" type="AnimatableBody2D" groups=["Projectile"]]
+show_behind_parent = true
+script = ExtResource("1_5tirr")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+visible = false
+shape = SubResource("CircleShape2D_5o51x")
+disabled = true
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_qliiq")
+animation = &"CoupEpee"
+autoplay = "CoupEpee"
+frame_progress = 0.255587
+
+[node name="EnemyCollision" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="EnemyCollision"]
+shape = SubResource("CircleShape2D_5o51x")
+
+[connection signal="animation_looped" from="AnimatedSprite2D" to="." method="On_animated_sprite_2d_animation_looped"]
+[connection signal="body_entered" from="EnemyCollision" to="." method="On_enemy_collision_body_entered"]
