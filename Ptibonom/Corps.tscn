@@ -1,0 +1,35 @@
+[gd_scene load_steps=7 format=3 uid="uid://1nkrh1nk8pxt"]
+
+[ext_resource type="Script" path="res://Ptibonom/Corps.cs" id="1_av1tf"]
+[ext_resource type="Texture2D" uid="uid://b3mped1onfek4" path="res://Ptibonom/Sprites/BonhommeMort.png" id="2_jopjy"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_g0klv"]
+atlas = ExtResource("2_jopjy")
+region = Rect2(0, 0, 20, 20)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_d43vc"]
+atlas = ExtResource("2_jopjy")
+region = Rect2(0, 20, 20, 20)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dlbrf"]
+atlas = ExtResource("2_jopjy")
+region = Rect2(20, 0, 20, 20)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ixmdu"]
+atlas = ExtResource("2_jopjy")
+region = Rect2(20, 20, 20, 20)
+
+[node name="Corps" type="Node2D"]
+script = ExtResource("1_av1tf")
+
+[node name="Body" type="Sprite2D" parent="."]
+texture = SubResource("AtlasTexture_g0klv")
+
+[node name="Chandail" type="Sprite2D" parent="."]
+texture = SubResource("AtlasTexture_d43vc")
+
+[node name="Pants" type="Sprite2D" parent="."]
+texture = SubResource("AtlasTexture_dlbrf")
+
+[node name="Casque" type="Sprite2D" parent="."]
+texture = SubResource("AtlasTexture_ixmdu")

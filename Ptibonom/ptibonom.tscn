@@ -1,13 +1,13 @@
 [gd_scene load_steps=104 format=3 uid="uid://cv804almw4wbl"]
 
 [ext_resource type="Script" path="res://Ptibonom/ptibonom.cs" id="1_bkhgi"]
-[ext_resource type="Texture2D" uid="uid://co1pao4mpafto" path="res://Ptibonom/Ptibonom.png" id="1_igksi"]
+[ext_resource type="Texture2D" uid="uid://co1pao4mpafto" path="res://Ptibonom/Sprites/Ptibonom.png" id="1_igksi"]
 [ext_resource type="Script" path="res://Global/CharacterSprites.cs" id="2_mqyhf"]
-[ext_resource type="Texture2D" uid="uid://d0fr3tyhf4sys" path="res://Ptibonom/Chandail.png" id="3_mf8gd"]
-[ext_resource type="Texture2D" uid="uid://b2vbibo3bsxvc" path="res://Ptibonom/BonhommeEpee.png" id="5_wgw7m"]
-[ext_resource type="Texture2D" uid="uid://bybglj6iwmqnh" path="res://Ptibonom/BonhommePants.png" id="6_kf7s1"]
-[ext_resource type="Texture2D" uid="uid://bdhbv4tubsgml" path="res://Ptibonom/BonhommeBouclier.png" id="7_mxs6w"]
-[ext_resource type="Texture2D" uid="uid://dkwd2m576euf7" path="res://Ptibonom/BonhommeCasque.png" id="8_wd62m"]
+[ext_resource type="Texture2D" uid="uid://d0fr3tyhf4sys" path="res://Ptibonom/Sprites/Chandail.png" id="3_mf8gd"]
+[ext_resource type="Texture2D" uid="uid://b2vbibo3bsxvc" path="res://Ptibonom/Sprites/BonhommeEpee.png" id="5_wgw7m"]
+[ext_resource type="Texture2D" uid="uid://bybglj6iwmqnh" path="res://Ptibonom/Sprites/BonhommePants.png" id="6_kf7s1"]
+[ext_resource type="Texture2D" uid="uid://bdhbv4tubsgml" path="res://Ptibonom/Sprites/BonhommeBouclier.png" id="7_mxs6w"]
+[ext_resource type="Texture2D" uid="uid://dkwd2m576euf7" path="res://Ptibonom/Sprites/BonhommeCasque.png" id="8_wd62m"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_srq00"]
 radius = 3.9

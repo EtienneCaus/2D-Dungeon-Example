@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://d0fr3tyhf4sys"
-path="res://.godot/imported/Chandail.png-f2fedc2ce1e9df57c92a18e400dc40b0.ctex"
+uid="uid://bdhbv4tubsgml"
+path="res://.godot/imported/BonhommeBouclier.png-70ee037151bcf75ec2983fe7771de065.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Ptibonom/Chandail.png"
-dest_files=["res://.godot/imported/Chandail.png-f2fedc2ce1e9df57c92a18e400dc40b0.ctex"]
+source_file="res://Ptibonom/Sprites/BonhommeBouclier.png"
+dest_files=["res://.godot/imported/BonhommeBouclier.png-70ee037151bcf75ec2983fe7771de065.ctex"]
 
 [params]
 

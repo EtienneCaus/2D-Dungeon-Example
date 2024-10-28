@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bybglj6iwmqnh"
-path="res://.godot/imported/BonhommePants.png-dd2405736d100f2a04130d1b42f929ec.ctex"
+uid="uid://b2vbibo3bsxvc"
+path="res://.godot/imported/BonhommeEpee.png-f2edbc62076341f786bf11db17bb5468.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Ptibonom/BonhommePants.png"
-dest_files=["res://.godot/imported/BonhommePants.png-dd2405736d100f2a04130d1b42f929ec.ctex"]
+source_file="res://Ptibonom/Sprites/BonhommeEpee.png"
+dest_files=["res://.godot/imported/BonhommeEpee.png-f2edbc62076341f786bf11db17bb5468.ctex"]
 
 [params]
 

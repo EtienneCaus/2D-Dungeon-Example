@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bdhbv4tubsgml"
-path="res://.godot/imported/BonhommeBouclier.png-81ef1f6b6f6e3dd14758e591f1f6248f.ctex"
+uid="uid://dkwd2m576euf7"
+path="res://.godot/imported/BonhommeCasque.png-a76c1cc15838be55b26697090ec99581.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Ptibonom/BonhommeBouclier.png"
-dest_files=["res://.godot/imported/BonhommeBouclier.png-81ef1f6b6f6e3dd14758e591f1f6248f.ctex"]
+source_file="res://Ptibonom/Sprites/BonhommeCasque.png"
+dest_files=["res://.godot/imported/BonhommeCasque.png-a76c1cc15838be55b26697090ec99581.ctex"]
 
 [params]
 

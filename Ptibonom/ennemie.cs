@@ -399,7 +399,15 @@ public partial class ennemie : CharacterBody2D
 			if(selfHP <= 0)
 			{
 				QueueFree();
-				GetNode<Game>("/root/Game").playerGold += 100;  //Augmente l'argent du joeur	
+				GetNode<Game>("/root/Game").playerGold += 100;  //Augmente l'argent du joeur
+
+				PackedScene corps = ResourceLoader.Load("res://Ptibonom/Corps.tscn") as PackedScene;	//Crée le corps
+				Corps corpsTemp = corps.Instantiate() as Corps;
+				corpsTemp.Position = Position - Vector2.Zero;
+
+				corpsTemp.Create(characterSprite.body.Modulate, characterSprite.chandail.Modulate,
+					characterSprite.pants.Modulate, characterSprite.casque.Modulate);	//Change la couleur du corps
+				GetParent().AddChild(corpsTemp);
 			}
 		}
 		GetNode<ProgressBar>("HealthBar").Visible = true;

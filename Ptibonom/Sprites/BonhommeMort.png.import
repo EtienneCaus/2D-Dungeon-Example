@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://co1pao4mpafto"
-path="res://.godot/imported/Ptibonom.png-446999ef7d086ff01b6ee227787c4abb.ctex"
+uid="uid://b3mped1onfek4"
+path="res://.godot/imported/BonhommeMort.png-b5a11896a18f8a4c7a5867da7fc58b07.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Ptibonom/Ptibonom.png"
-dest_files=["res://.godot/imported/Ptibonom.png-446999ef7d086ff01b6ee227787c4abb.ctex"]
+source_file="res://Ptibonom/Sprites/BonhommeMort.png"
+dest_files=["res://.godot/imported/BonhommeMort.png-b5a11896a18f8a4c7a5867da7fc58b07.ctex"]
 
 [params]
 

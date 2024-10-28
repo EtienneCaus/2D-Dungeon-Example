@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dkwd2m576euf7"
-path="res://.godot/imported/BonhommeCasque.png-ec5b32e6fe408a5e16e40bdeeb6bcc36.ctex"
+uid="uid://bybglj6iwmqnh"
+path="res://.godot/imported/BonhommePants.png-e0bad04b3a7067c6e71aa1c58c882134.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Ptibonom/BonhommeCasque.png"
-dest_files=["res://.godot/imported/BonhommeCasque.png-ec5b32e6fe408a5e16e40bdeeb6bcc36.ctex"]
+source_file="res://Ptibonom/Sprites/BonhommePants.png"
+dest_files=["res://.godot/imported/BonhommePants.png-e0bad04b3a7067c6e71aa1c58c882134.ctex"]
 
 [params]
 
