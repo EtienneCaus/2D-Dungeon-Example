@@ -20,6 +20,7 @@ atlas = ExtResource("2_jopjy")
 region = Rect2(20, 20, 20, 20)
 
 [node name="Corps" type="Node2D"]
+z_index = -9
 script = ExtResource("1_av1tf")
 
 [node name="Body" type="Sprite2D" parent="."]
@@ -33,3 +34,15 @@ texture = SubResource("AtlasTexture_dlbrf")
 
 [node name="Casque" type="Sprite2D" parent="."]
 texture = SubResource("AtlasTexture_ixmdu")
+
+[node name="Blood" type="CPUParticles2D" parent="."]
+emitting = false
+amount = 16
+lifetime = 10.0
+one_shot = true
+preprocess = 5.0
+explosiveness = 0.5
+emission_shape = 2
+emission_sphere_radius = 8.0
+gravity = Vector2(0, 0)
+color = Color(0.745098, 0, 0, 1)

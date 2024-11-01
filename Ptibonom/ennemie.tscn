@@ -9,8 +9,8 @@
 [ext_resource type="Texture2D" uid="uid://bdhbv4tubsgml" path="res://Ptibonom/Sprites/BonhommeBouclier.png" id="7_mj6x6"]
 [ext_resource type="Texture2D" uid="uid://dkwd2m576euf7" path="res://Ptibonom/Sprites/BonhommeCasque.png" id="8_xpmc4"]
 
-[sub_resource type="CircleShape2D" id="CircleShape2D_nk2k2"]
-radius = 3.9
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_8nsb5"]
+size = Vector2(8, 8)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_m808x"]
 atlas = ExtResource("2_r4eti")
@@ -1051,7 +1051,7 @@ script = ExtResource("1_6kd8w")
 
 [node name="Base_Hitbox" type="CollisionShape2D" parent="."]
 visible = false
-shape = SubResource("CircleShape2D_nk2k2")
+shape = SubResource("RectangleShape2D_8nsb5")
 
 [node name="SelfSprite" type="Node2D" parent="."]
 script = ExtResource("2_2x6di")

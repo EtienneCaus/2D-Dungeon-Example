@@ -25,9 +25,6 @@ public partial class ptibonom : CharacterBody2D
 		Vector2 lookDirection = direction.Normalized().Snapped(Vector2.One);	//Change la valeur float du Vecteur2 en valeur entière (0,1)
 		Vector2 joysticDirection = Input.GetVector("West", "East", "North", "South").Snapped(Vector2.One); //Prend la direction du joystick droit
 
-		
-		if(Input.IsKeyPressed(Key.R))
-			GetTree().ChangeSceneToFile("res://main.tscn");	//Recharge le jeu si on appui sur "R"
 		if(swinging == 1)
 		{	
 			//Do nothing if you're swinging (hey, it works!)
@@ -219,8 +216,22 @@ public partial class ptibonom : CharacterBody2D
 			(direction == 3 && direction_state != 1) )		//If the Player isn't blocking...
 		{
 			playerStats.playerHP -= damage;	//Réduit la santé du joueur
-			if(playerStats.playerHP <= 0)  
+			if(playerStats.playerHP <= 0) 
+			{
 				QueueFree();			//Tue le joueur si la santé arrive à 0
+
+				PackedScene corps = ResourceLoader.Load("res://Ptibonom/Corps.tscn") as PackedScene;	//Crée le corps
+				Corps corpsTemp = corps.Instantiate() as Corps;
+				corpsTemp.Position = Position - Vector2.Zero;
+
+				Camera2D cameraTemp = GetNode<Camera2D>("Camera2D");	//Détache la caméra et attache-la au corps
+				RemoveChild(cameraTemp);
+				corpsTemp.AddChild(cameraTemp);
+
+				corpsTemp.Create(characterSprite.body.Modulate, characterSprite.chandail.Modulate,
+					characterSprite.pants.Modulate, characterSprite.casque.Modulate);	//Change la couleur du corps
+				GetParent().AddChild(corpsTemp);
+			}
 		}	
 	}
 

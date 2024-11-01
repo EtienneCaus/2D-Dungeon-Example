@@ -62,10 +62,20 @@ public partial class Main : Node2D
 					tileMapLayer.SetCell(new Vector2I(x,y),0,new Vector2I(1,0));	
 			}	
 		}
+
+		Utils utils = GetNode<Utils>("/root/Utils"); //Sauve le jeu
+		utils.SaveGame();
 	}
 
 	// Called every frame. 'delta' is the elapsed time since the previous frame.
 	public override void _Process(double delta)
 	{
+		if(Input.IsKeyPressed(Key.R))
+		{
+			Utils utils = GetNode<Utils>("/root/Utils");
+			if(GetNode<Game>("/root/Game").playerHP <= 0) //"Reset" la vie et l'or du joueur s'il est mort
+				utils.LoadGame();
+			GetTree().ChangeSceneToFile("res://main.tscn");	//Recharge le jeu si on appui sur "R"
+		}	
 	}
 }
